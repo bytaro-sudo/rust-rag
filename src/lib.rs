@@ -12,6 +12,8 @@ pub mod generation;
 /// Common re-exports for ease of use
 pub use chunking::Document;
 pub use chunking::Chunk;
+pub use embedding::Embedding;
+pub use embedding::EmbeddingGenerator;
 pub use retrieval::RetrievalResult;
 
 /// Library version
