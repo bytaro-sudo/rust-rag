@@ -1,0 +1,23 @@
+[package]
+name = "rust-rag"
+version = "0.1.0"
+edition = "2021"
+authors = ["Bytaro <bytaro@proton.me>"]
+description = "A modular Retrieval-Augmented Generation (RAG) system implemented in Rust"
+repository = "https://github.com/bytaro-sudo/rust-rag"
+license = "MIT"
+readme = "README.md"
+
+[dependencies]
+# Error handling
+anyhow = "1.0"
+thiserror = "1.0"
+
+# Utilities
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+log = "0.4"
+env_logger = "0.10"
+
+[dev-dependencies]
+tokio = { version = "1", features = ["full"] }
