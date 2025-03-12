@@ -1,7 +1,11 @@
 //! Example showing how to use embeddings with the rust-rag library.
 
-use rust_rag::chunking::{Document, ChunkingStrategy, chunk_document};
-use rust_rag::embedding::{ EmbeddingConfig, EmbeddingProvider, create_embedding_generator};
+use rust_rag::chunking::Document;
+use rust_rag::chunking::ChunkingStrategy;
+use rust_rag::chunking::chunk_document;
+use rust_rag::embedding::EmbeddingConfig;
+use rust_rag::embedding::EmbeddingProvider;
+use rust_rag::embedding::create_embedding_generator;
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     // Create a test document

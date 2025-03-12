@@ -2,6 +2,7 @@
 
 use std::collections::HashMap;
 use anyhow::Result;
+use serde::{Deserialize, Serialize};
 
 /// Represents a document to be processed in the RAG system
 pub struct Document {
@@ -31,7 +32,7 @@ impl Document {
 }
 
 /// Represents a chunk of a document
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct Chunk {
     /// Unique chunk identifier
     pub id: String,

@@ -1,8 +1,10 @@
 //! Module for generating embeddings from text chunks.
 
 use crate::chunking::Chunk;
-use anyhow::{Result, Context, anyhow};
-use serde::{Deserialize, Serialize};
+use anyhow::Result;
+use anyhow::anyhow;
+use serde::Deserialize;
+use serde::Serialize;
 use std::fmt;
 
 /// Represents a vector embedding for a text chunk.
