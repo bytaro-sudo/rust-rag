@@ -52,7 +52,7 @@ impl Embedding {
             return 0.0;
         }
 
-        dot_product / (norm_a.sqrt() + norm_b.sqrt())
+        dot_product / (norm_a.sqrt() * norm_b.sqrt())
     }
 }
 

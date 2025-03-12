@@ -311,7 +311,7 @@ impl PromptTemplates {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::chunking::{Chunk, Document};
+    use crate::chunking::{Chunk};
 
     fn create_test_retrieval_results() -> Vec<RetrievalResult> {
         let chunks = vec![
